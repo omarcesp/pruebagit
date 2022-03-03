@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=di, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Ordenes</title>
+    <style>
+        :root {
+            --withe: #ffffff;
+            --black: #000000;
+            --very-ligth-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        .my-order {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+
+        }
+
+        .my-order-content {
+           display:grid;
+           grid-template-rows: auto 1fr auto;
+           width: 300px;
+
+        }
+        .my-order-container {
+           display:flex;
+           flex-direction: column;
+
+        }
+
+        .title {
+            font-size: var(--lg);
+             margin-bottom: 30px;
+        }
+        
+        .order{
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 16px;
+            align-items: center;
+            border-radius: 10px;
+            margin-bottom: 0px;
+            
+        }
+        .order p:nth-child(1){
+            display:flex;
+            flex-direction: column;
+        }
+        .order p:nth-child(2){
+           text-align: end;
+           font-weight: bold;
+        }
+        .order p span:nth-child(1){
+            font-size: var(--md);
+            font-weight: bold;
+            margin-bottom:5px;
+        }
+        .order p span:nth-child(2){
+            font-size: var(--sm);
+            color: var(--very-ligth-pink);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-order">
+        <div class="my-order-container">
+            <h1 class="title">Mis ordenes</h1>
+            <div class="my-order-content">
+                <div class="order">
+                    <p>
+                        <span>13-02-2022</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p>$ 560</p>
+                    <img src="./icons/flechita.svg" alt="">
+                </div>
+                <div class="order">
+                    <p>
+                        <span>13-02-2022</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p>$ 560</p>
+                    <img src="./icons/flechita.svg" alt="">
+                </div>
+                <div class="order">
+                    <p>
+                        <span>13-02-2022</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p>$ 560</p>
+                    <img src="./icons/flechita.svg" alt="">
+                </div>
+                <div class="order">
+                    <p>
+                        <span>13-02-2022</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p>$ 560</p>
+                    <img src="./icons/flechita.svg" alt="">
+                </div>
+                <div class="order">
+                    <p>
+                        <span>13-02-2022</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p>$ 560</p>
+                    <img src="./icons/flechita.svg" alt="">
+                </div>
+            </div>
+             
+        </div>
+
+
+    </div>
+</body>
+
+</html>
